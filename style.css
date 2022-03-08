@@ -9,3 +9,8 @@ body{
     background-color: var(--black-pearl-color);
 }
 
+h1{
+    text-align: center;
+    color: var(--azure-blue);
+}
+
