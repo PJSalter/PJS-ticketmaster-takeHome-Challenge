@@ -1,0 +1,16 @@
+/* styling for css will go here */
+
+:root{
+    --black-pearl-color: #1F262D;
+    --azure-blue: #026CDF;
+}
+
+body{
+    background-color: var(--black-pearl-color);
+}
+
+h1{
+    text-align: center;
+    color: var(--azure-blue);
+}
+
