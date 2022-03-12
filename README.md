@@ -2,7 +2,7 @@
 
 ## :book: :ticket: A challenge that was tasked by TicketMaster :violin: :trumpet: :musical_score:
 
-## :star2: [click here to view](https://pjsalter.github.io/PJS-ticketmaster-takeHome-Challenge) 
+## :star2: [click here to view](https://pjsalter.github.io/PJS-ticketmaster-takeHome-Challenge) :star2:
 
 ##### This task relates to a specific outline whereby a current event may lack ticket availability. However more could appear in an approaching time ahead from an instance like 'a promotor releases more tickets for us to sell'.
 
