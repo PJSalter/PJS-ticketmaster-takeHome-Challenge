@@ -8,8 +8,34 @@
     <title>pjs-ticketmaster-take-home-challenge</title>
 </head>
 <body>
-
     <h1>Challenge for ticketmaster</h1>
+
+    <!-- the container which the form is held -->
+    <section class="form-container">
+        <!-- the action will process the form data. similar to the action attribute -->
+        <!-- the POST attribute will identify the HTTP method to submit the form with. -->
+        <form action="index.html" method="post" id="confirm">
+            <h4>How should we contact you?</h4>
+            <!-- form area for entering a mobile phone -->
+                <div class="classification-form">
+                    <label for="mobile-contact">Mobile Number</label>
+                    <input type="tel" id="mobile-contact" name="mobile-contact" placeholder="Enter number here" />
+                    <!-- my method uses the <small> element which will display the error message in case the <input> element has incorrect info.-->
+                    <small></small>
+                </div>
+            <!-- form area for entering an email address -->
+                <div class="classification-form">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email here" />
+                    <small></small>
+                </div>
+        </form>
+              
+         
+
+
+    </section>
+
     
     <script src="script.js"></script>
 </body>
