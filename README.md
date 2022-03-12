@@ -1,31 +1,39 @@
-# PJS-ticketmaster-takeHome-Challenge
+# :musical_note: PJS-ticketmaster-takeHome-Challenge :notes:
 
-#### A challenge that was tasked by TicketMaster 
+## :book: :ticket: A challenge that was tasked by TicketMaster :violin: :trumpet: :musical_score:
 
-#### This task relates to a specific outline whereby a current event may lack ticket availability. However more could appear in an approaching time ahead from an instance like 'a promotor releases more tickets for us to sell'.
+## :star2: [click here to view](https://pjsalter.github.io/PJS-ticketmaster-takeHome-Challenge) 
 
-#### They may want to stay clear from this scenario where a fan visits an event details page, sees that there are no tickets and assumes that it's sold out or completely unavailable.
+##### This task relates to a specific outline whereby a current event may lack ticket availability. However more could appear in an approaching time ahead from an instance like 'a promotor releases more tickets for us to sell'.
 
-#### To facilitate this we have the ability to add fans to a waiting list, which will allow them to be notified if more tickets become available for sale.
+##### They may want to stay clear from this scenario where a fan visits an event details page, sees that there are no tickets and assumes that it's sold out or completely unavailable.
 
-#### The waiting list form is accessed from a "join the waiting list" button which renders on an event details page if it currently has no tickets available.
+##### :date: To facilitate this we have the ability to add fans to a waiting list, which will allow them to be notified if more tickets become available for sale. :calendar:
 
-# User Stories: 
+##### :bookmark_tabs: The waiting list form is accessed from a "join the waiting list" button which renders on an event details page if it currently has no tickets available.
 
-- A fan can be notified via email or SMS, so the form should allow submission of email address and/or mobile phone number.
+# :pushpin: User Stories: 
 
-- A fan must be signed in to Ticketmaster in order to add themselves to the waiting list. If they're not signed in, we'll prompt them to sign in when they click the "join the waiting list" button.
+- :card_index: A fan can be notified via email or SMS, so the form should allow submission of email address and/or mobile phone number.
 
-- Once a fan is signed in, we'll have their email address, so we will pre-fill the email address field with it.
+- :warning: A fan must be signed in to Ticketmaster in order to add themselves to the waiting list. If they're not signed in, we'll prompt them to sign in when they click the "join the waiting list" button.
 
-- A fan can optionally add their phone number to the form.
+- :envelope: Once a fan is signed in, we'll have their email address, so we will pre-fill the email address field with it.
 
-- If a fan adds a phone number, they should be given the option to disallow contact via email.
+- :telephone: A fan can optionally add their phone number to the form.
 
-- A fan should not be allowed to submit an empty form.
+- :mailbox_closed: If a fan adds a phone number, they should be given the option to disallow contact via email.
 
-- Successful submission of the form should send a POST request to the waiting list API which will return a success or error response.
+- :pencil: A fan should not be allowed to submit an empty form.
 
-- The waiting list API should be called when the form loads, to prevent adding the fan to the waiting list multiple times. If the fan is already on the waiting list the fan should see a message informing them of that.
+- :postbox: Successful submission of the form should send a POST request to the waiting list API which will return a success or error response.
+
+- :traffic_light: The waiting list API should be called when the form loads, to prevent adding the fan to the waiting list multiple times. If the fan is already on the waiting list the fan should see a message informing them of that. :clock230:
+
+# :paperclip: The requirements:
+
+
+
+
 
 
