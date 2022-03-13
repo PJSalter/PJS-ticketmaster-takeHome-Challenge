@@ -12,7 +12,7 @@ const popupMessage = (input, message, type) => {
     // returning the parent of the particular node from the DOM tree.
     let messageBeep = input.parentNode.querySelector("small");
     messageBeep.innerText = message;
-    console.log(messageBeep)
+    //console.log(messageBeep)
     // reforming the input class attribute
     input.className = type ? "success" : "error";
     return type;
@@ -22,20 +22,21 @@ const popupMessage = (input, message, type) => {
 
 const appearingError = (input, message) => popupMessage(input, message, false);
 
-console.log(appearingError)
+//console.log(appearingError)
 
 // congrats to the user for entering the correct validated info.
 const correctInfo = input => popupMessage(input, "", true);
-
-console.log(correctInfo)
+//console.log(correctInfo)
 
 // setting the value onto these inputs.
 const includeTheValue = (input, message) => {
 
 if(input.value.trim() === "") {
+
     return appearingError(input, message) 
 } else {
     return correctInfo(input)
+    
 }
 }
 //console.log(input)
@@ -51,7 +52,7 @@ const validateEmail = (input, requiredMsg, invalidMsg) => {
 		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 	const email = input.value.trim();
-    console.log(email)
+    //console.log(email)
 	if (!emailRegex.test(email)) {
 		return appearingError(input, invalidMsg);
 	}
@@ -69,7 +70,7 @@ const validatePhone = (input, requiredMsg, invalidMsg) => {
     let mobileRegex = /^[0-9]{11}$/;
 
     let insertTelephone = input.value.trim();
-    console.log(insertTelephone)
+    //console.log(insertTelephone)
 
     if(!mobileRegex.test(insertTelephone)) {
         appearingError(input, invalidMsg);
@@ -92,17 +93,19 @@ const validatePhone = (input, requiredMsg, invalidMsg) => {
 	// validate the form information for both number and email.
 	let numberValidation = validatePhone(confirmForm.elements["mobile-contact"], vitalMobileNum, incorrectNum);
 	let emailValidation = validateEmail(confirmForm.elements["email"], emailAddressNeeded, incorrectEmail);
-
+   
 	// then if num and email are both valid then post an alert.
     let bothAcceptable = numberValidation && emailValidation;
-    // if both are true
-	if (bothAcceptable = true) {
-		alert("Confirming and posting the information");
-	}
-  }
 
+    if(bothAcceptable = true) {
+        //alert("Received your contact information");
+        let message = document.querySelector('input.success')
+        message.innerText = "Received your contact information";
+    } 
+
+
+   
+}
   // handling the confirmation handler with an event listener on 'submit'.
-
+  
   confirmForm.addEventListener("submit", checkConfirm);
-
-
