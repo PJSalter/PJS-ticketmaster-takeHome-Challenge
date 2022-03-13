@@ -94,7 +94,9 @@ const validatePhone = (input, requiredMsg, invalidMsg) => {
 	let emailValidation = validateEmail(confirmForm.elements["email"], emailAddressNeeded, incorrectEmail);
 
 	// then if num and email are both valid then post an alert.
-	if (numberValidation && emailValidation) {
+    let bothAcceptable = numberValidation && emailValidation;
+    // if both are true
+	if (bothAcceptable = true) {
 		alert("Confirming and posting the information");
 	}
   }
