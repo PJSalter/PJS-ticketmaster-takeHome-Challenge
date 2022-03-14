@@ -28,8 +28,23 @@ h1{
     margin: 10%;
 }
 
+.icon{
+    font-family: 'FontAwesome';
+    color: var(--azure-blue);
+    text-shadow: 0.188rem 0.188rem 0 var(--black-pearl-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+i.fa-solid.fa-list{
+    content: 'f03a';
+}
+
 h4{
-    padding: 5px 0;
+    padding: 0.313rem 0rem;
     font-size: 1.4rem;
     font-weight: normal;
     text-align: center;
@@ -38,8 +53,8 @@ h4{
 }
 
 #confirm{
-    max-width: 400px;
-    margin: 10px auto;
+    max-width: 25rem;
+    margin: 0.625rem auto;
     padding: 0.5rem 1rem;
 }
 
@@ -53,7 +68,7 @@ h4{
     margin-right: auto;
     max-width: 18rem;
     background-color: var(--cool-slate);
-    box-shadow: var(--cool-diatomite) 0px 5px 15px;
+    box-shadow: var(--cool-diatomite) 0rem 0.313rem 0.938rem;
 }
 
 .classification-form{
@@ -70,14 +85,14 @@ h4{
 
 label{
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 0.313rem;
     vertical-align: top;
     width: 100%;
 }
 
 #mobile-contact{
-    border: solid 1px var(--silver-surfer-color);
-    border-radius: 3px;
+    border: solid 0.063rem var(--silver-surfer-color);
+    border-radius: 0.188rem;
     display: inline-block;
     padding: 0.5rem 0.75rem;
     width: 100%;
@@ -86,8 +101,8 @@ label{
 }
 
 #email{
-    border: solid 1px var(--silver-surfer-color);
-    border-radius: 3px;
+    border: solid 0.063rem var(--silver-surfer-color);
+    border-radius: 0.188rem;
     display: inline-block;
     padding: 0.5rem 0.75rem;
     width: 100%;
@@ -100,8 +115,8 @@ label{
     color: var(--cool-diatomite);
     border-radius: 0.25rem;
     font-size: 1rem;
-    font-weight: 400;
-    border: 1px solid var(--azure-blue);
+    font-weight: 25rem;
+    border: 0.063rem solid var(--azure-blue);
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     text-align: center;
     padding: 0.375rem 0.75rem;
@@ -114,7 +129,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid var(--azure-blue);
+    border: 0.125rem solid var(--azure-blue);
     background-color: var(--black-pearl-color);
 }
 
