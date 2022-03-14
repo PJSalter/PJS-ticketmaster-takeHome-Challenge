@@ -2,7 +2,9 @@
 
 // picking up the form element to start off with so that I can access the rest of the elements.
 const confirmForm = document.querySelector('#confirm');
-console.log(confirmForm);
+//console.log(confirmForm);
+
+const message = document.querySelector(".message")
 
 // show a message from a type of input, whether its the email or mobile.
 // create a function that will appear this message once user confirms there details.
@@ -94,18 +96,27 @@ const validatePhone = (input, requiredMsg, invalidMsg) => {
 	let numberValidation = validatePhone(confirmForm.elements["mobile-contact"], vitalMobileNum, incorrectNum);
 	let emailValidation = validateEmail(confirmForm.elements["email"], emailAddressNeeded, incorrectEmail);
    
-	// then if num and email are both valid then post an alert.
     let bothAcceptable = numberValidation && emailValidation;
 
-    if(bothAcceptable = true) {
+
+    
+    if(bothAcceptable != true) {
         //alert("Received your contact information");
-        let message = document.querySelector('input.success')
+        //let message = document.querySelector('input.success')
+        message.innerText = "Incorrect details, please try again"
+        message.style.color = "var(--error-red)"
+    } else {
         message.innerText = "Received your contact information";
-    } 
+        message.style.color = "var(--correct-green)"
+    }
 
+    
 
+   
    
 }
   // handling the confirmation handler with an event listener on 'submit'.
   
   confirmForm.addEventListener("submit", checkConfirm);
+//   line to make form disappear
+//   confirmForm.style.display = 'none';

@@ -93,12 +93,6 @@ label{
     font-size: 1rem;
 }
 
- 
-input.success{
-    border-color: var(--correct-green);
-    font-size: smaller;
-}
-
 .click-confirm{
     background: var(--azure-blue);
     color: var(--cool-diatomite);
@@ -112,6 +106,13 @@ input.success{
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 100%;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--azure-blue);
 }
 
 
