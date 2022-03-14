@@ -4,6 +4,7 @@
     --black-pearl-color: #1F262D;
     --azure-blue: #026CDF;
     --cool-diatomite: #E3ECF1;
+    --silver-surfer-color: #ccc;
     --cool-moonrock: #C8D2D7;
     --cool-slate: #61737C;
     --error-red: #da4f49;
@@ -74,7 +75,7 @@ label{
 }
 
 #mobile-contact{
-    border: solid 1px #ccc;
+    border: solid 1px var(--silver-surfer-color);
     border-radius: 3px;
     display: inline-block;
     padding: 0.5rem 0.75rem;
@@ -84,7 +85,7 @@ label{
 }
 
 #email{
-    border: solid 1px #ccc;
+    border: solid 1px var(--silver-surfer-color);
     border-radius: 3px;
     display: inline-block;
     padding: 0.5rem 0.75rem;
